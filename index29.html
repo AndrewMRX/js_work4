@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Самостоятельная работа 1</title>
+</head>
+
+<body>
+  <script>
+
+    let nozero = '';
+    let endzero = false;
+
+    let month = window.prompt("Введите месяц...");
+    if (month !== null) {
+      month = month.toLowerCase();
+    }
+
+    if(month[0] == 0){
+    for (let i = 0; i < month.length; i++){
+      if(endzero == false) {
+        if (month[i] != '0') {
+          endzero = true;
+          nozero = nozero + month[i];
+        }
+      } else {
+        nozero = nozero + month[i];
+      }
+    }
+    month = nozero;
+    }
+
+    //alert(month);
+
+    switch (month) {
+      case 'первый':
+        alert('зима');
+        break;
+      case '1':
+        alert('зима');
+        break;
+      case 'январь':
+        alert('зима');
+        break;
+      case 'january':
+        alert('зима');
+        break;
+      
+      case 'второй':
+        alert('зима');
+        break;
+      case '2':
+        alert('зима');
+        break;
+      case 'февраль':
+        alert('зима');
+        break;
+      case 'february':
+        alert('зима');
+        break;
+
+      case 'двенадцатый':
+        alert('зима');
+        break;
+      case '12':
+        alert('зима');
+        break;
+      case 'декабрь':
+        alert('зима');
+        break;
+      case 'december':
+        alert('зима');
+        break;  
+// ------------------------
+
+ 
+      case 'третий':
+        alert('весна');
+        break;
+      case '3':
+        alert('весна');
+        break;
+      case 'март':
+        alert('весна');
+        break;
+      case 'march':
+        alert('весна');
+        break;
+
+      case 'четвертый':
+        alert('весна');
+        break;
+      case 'четвёртый':
+        alert('весна');
+        break;
+      case '4':
+        alert('весна');
+        break;
+      case 'апрель':
+        alert('весна');
+        break;
+      case 'april':
+        alert('весна');
+        break;
+      
+      case 'пятый':
+        alert('весна');
+        break;
+      case '5':
+        alert('весна');
+        break;
+      case 'май':
+        alert('весна');
+        break;
+      case 'may':
+        alert('весна');
+        break;
+
+
+ // ------------------------
+
+      case 'шестой':
+        alert('лето');
+        break;
+      case '6':
+        alert('лето');
+        break;
+      case 'июнь':
+        alert('лето');
+        break;
+      case 'june':
+        alert('лето');
+        break;
+
+      case 'седьмой':
+        alert('лето');
+        break;
+      case '7':
+        alert('лето');
+        break;
+      case 'июль':
+        alert('лето');
+        break;
+      case 'july':
+        alert('лето');
+        break;
+
+      case 'восьмой':
+        alert('лето');
+        break;
+      case '8':
+        alert('лето');
+        break;
+      case 'август':
+        alert('лето');
+        break;
+      case 'august':
+        alert('лето');
+        break;
+
+ // ------------------------
+
+      case 'девятый':
+        alert('осень');
+        break;
+      case '9':
+        alert('осень');
+        break;
+      case 'сентябрь':
+        alert('осень');
+        break;
+      case 'september':
+        alert('осень');
+        break;
+
+      case 'десятый':
+        alert('осень');
+        break;
+      case '10':
+        alert('осень');
+        break;
+      case 'октябрь':
+        alert('осень');
+        break;
+      case 'october':
+        alert('осень');
+        break;
+
+      case 'одиннадцатый':
+        alert('осень');
+        break;
+      case '11':
+        alert('осень');
+        break;
+      case 'ноябрь':
+        alert('осень');
+        break;
+      case 'november':
+        alert('осень');
+        break;
+
+      default:
+        alert('Не знаем такого месяца.');
+        break;
+    }
+  </script>
+</body>
+
+</html>

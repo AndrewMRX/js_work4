@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пример работы с пользователем</title>
+</head>
+<body>
+  Введите слово.<BR>
+    <script>
+      let where = window.prompt("Куда заглянем сегодня?");
+      if (where !== null){
+      where = where.toLowerCase();
+      }
+
+      switch (where) {
+        case 'вконтакте':
+          window.location = 'http://www.vk.com';
+          break;
+        case 'vkontakte':
+          window.location = 'http://www.vk.com';
+          break;
+        case 'vk':
+          window.location = 'http://www.vk.com';
+          break;
+        case 'вк':
+          window.location = 'http://www.vk.com';
+          break;
+
+        case 'тикток':
+          window.location = 'https://www.tiktok.com';
+          break;
+        case 'tictok':
+          window.location = 'https://www.tiktok.com';
+          break;
+
+        case 'фейсбук':
+          window.location = 'https://www.facebook.com';
+          break;
+        case 'facebook':
+          window.location = 'https://www.facebook.com';
+          break;
+
+        case 'инстаграм':
+          window.location = 'https://www.instagram.com';
+          break;
+        case 'instagram':
+          window.location = 'https://www.instagram.com';
+          break;
+
+        case 'твиттер':
+          window.location = 'https://www.twitter.com';
+          break;
+        case 'twitter':
+          window.location = 'https://www.twitter.com';
+          break;
+      
+        default:
+          window.location = 'https://itiu.bsu.by';
+          break;
+      }
+    </script>  
+</body>
+</html>

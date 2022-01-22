@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Самостоятельная работа 2</title>
+</head>
+
+<body>
+  <script>
+
+    let mush = '';
+
+    let color = window.prompt("Введите цвет гриба.\n(белый, желтый, красный, коричневый)");
+    mush = mush + color + '_';
+    
+    let skirt = window.prompt("Есть ли на грибе юбка?\n(есть, нет)");
+    mush = mush + skirt;
+
+    //alert(mush);
+
+    switch (mush) {
+      case 'белый_нет':
+        alert('Вы нашли белый гриб');
+        break;
+
+      case 'красный_есть':
+        alert('А не мухомор ли это?');
+        break;
+      
+      case 'красный_нет':
+        alert('Может это подосиновик?');
+        break;
+
+      default:
+        alert('С грибами надо быть внимательными.');
+        break;
+    }
+  </script>
+</body>
+
+</html>
